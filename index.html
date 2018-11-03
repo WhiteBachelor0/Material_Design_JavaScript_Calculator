@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Material Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body onload="restarting()">
+		<div id="content">
+	<header>
+		<img src="css/images/calculating.png" width="70" height="70" id="calculator_image" />
+		<h1>WhiteBachelor.</h1>
+		<br />
+		<h2><span id="dsgn">MATERIAL Design</span> <br /> JavaScript Calculator.</h2>
+	</header>
+
+	<section id="calculator_app">
+		<input type="text" name="result" id="inp" placeholder="input..." />
+		<ul class="math_buttons_list">
+			<li class="button mat_el" onclick="button_press(String('+'))">+</li>
+			<li class="button" onclick="button_press(String('3'))">3</li>
+			<li class="button" onclick="button_press(String('2'))">2</li>
+			<li class="button" onclick="button_press(String('1'))">1</li>
+	 </ul>
+   <ul class="math_buttons_list">
+			<li class="button mat_el" onclick="button_press(String('-'))">-</li>
+			<li class="button" onclick="button_press(String('6'))">6</li>
+			<li class="button" onclick="button_press(String('5'))">5</li>
+			<li class="button" onclick="button_press(String('4'))">4</li>
+	 </ul>
+	 <ul class="math_buttons_list">
+			<li class="button mat_el" onclick="button_press(String('*'))">*</li>
+			<li class="button" onclick="button_press(String('9'))">9</li>
+			<li class="button" onclick="button_press(String('8'))">8</li>
+			<li class="button" onclick="button_press(String('7'))">7</li>
+	 </ul>
+	 <ul class="math_buttons_list">
+			<li class="button mat_el" onclick="button_press(String('/'))">/</li>
+			<li class="button" id="buttonE" onclick="getResult()">=</li>
+			<li class="button" id="button0" onclick="button_press(String('0'))">0</li>
+		</ul>
+	</section>
+	<p id='p_text'> JavaScript Material design calculator. My first working project.
+		Works on JavaScript, without any libraries. Please enter only numbers,
+	 do not torment my code. Thinking through the design,i tried to imitate
+	  the Google Material design. I think the result good for the first time,
+		 though, the design not perfect.</p>
+</div>
+<footer>WhiteBachelor 2018. Google Material Design JavaScript Calculator.</footer>
+</body>
+</html>
